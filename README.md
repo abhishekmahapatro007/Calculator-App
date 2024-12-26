@@ -191,7 +191,82 @@ Install the apk on your Android phone.
 
 You now have a complete workflow to convert an Android App Bundle (AAB) to APK and install it on your Android device, using Expo, EAS Build, and bundletool.
 
-By following the steps above, you can:
+---
+
+# How To Setup Your Project
+Creating a simple working calculator app using React Native that can work on the web (via React Native Web) is absolutely possible! Let me walk you through it step-by-step. We’ll build a basic calculator with the core functionality of addition, subtraction, multiplication, and division.
+
+Here’s how to do it:
+---
+## Step 1: Set Up the React Native Environment
+First, ensure that you have the necessary tools installed:
+
+Node.js - Download and install Node.js
+Expo CLI - Install Expo CLI globally via npm (this allows you to run React Native apps both on mobile and in the web):
+```bash
+npm install -g expo-cli
+```
+---
+## Step 2: Create a New Expo Project
+Create a new Expo project with a web support template:
+
+```bash
+expo init CalculatorApp
+cd CalculatorApp
+```
+Choose the "blank" template when prompted.
+---
+## Step 3: Install React Native Web
+Expo comes with React Native Web by default, but just in case, you can ensure it's set up properly by running:
+
+```bash
+expo install react-native-web react-dom
+```
+---
+## Step 4: Create the Calculator App
+-
+Now, let’s build the actual calculator UI and functionality. Open the App.js file and replace its content with the calculator code.
+---
+## Step 5: Run the App on Web
+To test your app on the web, run the following command:
+
+```bash
+expo start --web
+```
+This will start your app and open it in the web browser. You should see a basic calculator with buttons for digits and basic operations.
+## Or ##
+```bash
+npm run start
+```
+and press w to run on web or scan QR Code in your Expo Go App installed in your phone to directly run on phone.(later is recommended)
+
+Explanation of Code:
+```plaintext
+State Management:
+
+input holds the string of the current expression.
+output holds the result of the calculation.
+Button Handlers:
+
+handlePress: Adds a number or operator to the input string.
+handleClear: Clears both the input and output.
+handleEvaluate: Uses eval() to compute the result of the input expression. If an error occurs (e.g., invalid expression), it displays "Error."
+```
+### Layout:
+
+The buttons are laid out in rows of four.
+The input field shows the current expression, and the result field shows the calculated result.
+---
+## Step 6: Improve or Customize (Optional)
+Styling: Adjust the styles to make the app look more polished.
+Error Handling: The use of eval() can be risky. Consider using a library like math.js for a more secure evaluation of mathematical expressions.
+Mobile Support: Since we’re using Expo, the app works both on mobile and web.
+### Final Thoughts:
+This is a very simple React Native app that works on both mobile and web, leveraging Expo and React Native Web. React Native Web is powerful because it allows you to write code that works across platforms seamlessly, which is perfect for simple applications like this calculator!
+
+
+
+#### By following the steps above, you can:
 
 - Build your app using EAS Build and create an AAB.
 - Convert the AAB to APK using bundletool.
