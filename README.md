@@ -1,4 +1,4 @@
-# README: Building APK from AAB using Expo, EAS, and BundleTool
+# Installation: Building APK from AAB using Expo, EAS, and BundleTool
 
 This guide provides a detailed walkthrough on how to build an APK file from an Android App Bundle (AAB) file generated using **Expo** and **EAS Build**. Additionally, we will cover how to use **bundletool** to convert the AAB to APK and install it on your Android device.
 
