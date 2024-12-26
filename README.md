@@ -111,7 +111,7 @@ Example build URL:
 ```plaintext
 https://expo.dev/accounts/<Your Expo Account>/projects/<Your Project>/builds/<build-id>
 ```
-# Step 4: Convert AAB to APK Using BundleTool
+## Step 4: Convert AAB to APK Using BundleTool
 
 Once you have the AAB file, you can convert it to an APK file using `bundletool`. Here’s how:
 
@@ -133,6 +133,9 @@ java -jar bundletool-all-<version>.jar build-apks \
   --ks-pass=pass:your-keystore-password \
   --key-pass=pass:your-key-password
 ```
+## Step 5: Install APK on Android Device
+Install the apk on your Android phone.
+
 # Commands Reference
 
 ## Expo CLI Commands
